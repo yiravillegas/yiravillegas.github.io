@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,500;0,7..72,600;0,7..72,700;1,7..72,400&family=Rokkitt:wght@700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f8fafc;
+  --foreground: #0c192c;
+  --surface: #ffffff;
+  --surface-alt: #f1f5f9;
+}
+
+[data-theme="dark"] {
+  --background: #090e17;
+  --foreground: #f8fafc;
+  --surface: #111a29;
+  --surface-alt: #182438;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Literata', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, .font-display {
+  font-family: 'Rokkitt', serif;
+  letter-spacing: -0.015em;
+}
