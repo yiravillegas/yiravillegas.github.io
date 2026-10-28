@@ -33,9 +33,11 @@ export default function Home() {
     const saved = localStorage.getItem("yira-portfolio-theme");
     if (saved === "light") {
       setTheme("light");
+      document.documentElement.classList.remove("dark");
       document.documentElement.removeAttribute("data-theme");
     } else {
       setTheme("dark");
+      document.documentElement.classList.add("dark");
       document.documentElement.setAttribute("data-theme", "dark");
     }
   }, []);
@@ -43,17 +45,20 @@ export default function Home() {
   const toggleTheme = () => {
     if (theme === "dark") {
       setTheme("light");
+      document.documentElement.classList.remove("dark");
       document.documentElement.removeAttribute("data-theme");
       localStorage.setItem("yira-portfolio-theme", "light");
     } else {
       setTheme("dark");
+      document.documentElement.classList.add("dark");
       document.documentElement.setAttribute("data-theme", "dark");
       localStorage.setItem("yira-portfolio-theme", "dark");
     }
   };
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#06090f] dark:text-slate-100 transition-colors duration-300 tech-grid-pattern selection:bg-indigo-500 selection:text-white">
+    <div className={theme === "dark" ? "dark" : ""}>
+      <div className="min-h-screen bg-slate-50 text-slate-900 dark:bg-[#06090f] dark:text-slate-100 transition-colors duration-300 tech-grid-pattern selection:bg-indigo-500 selection:text-white">
       
       {/* =========================================================================
           TOP FLOATING NAVBAR (Modern Startup Pill Bar)
@@ -775,6 +780,7 @@ export default function Home() {
         </div>
       </section>
 
+      </div>
     </div>
   );
 }
