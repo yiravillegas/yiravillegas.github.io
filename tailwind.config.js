@@ -9,34 +9,34 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        navy: {
-          950: "#070e1b",
-          900: "#0c192c",
-          800: "#132744",
-          700: "#1c385f",
-          600: "#274d7e",
-          100: "#e0e9f6",
-          50: "#f0f5fc",
+        brand: {
+          50: "#eef2ff",
+          100: "#e0e7ff",
+          200: "#c7d2fe",
+          300: "#a5b4fc",
+          400: "#818cf8",
+          500: "#6366f1",
+          600: "#4f46e5",
+          700: "#4338ca",
+          800: "#3730a3",
+          900: "#312e81",
+          950: "#1e1b4b",
         },
-        paper: {
-          50: "#faf9f6",
-          100: "#f5f4ef",
-          200: "#eceae1",
-        },
-        accent: {
-          rose: "#e11d48",
-          hover: "#be123c",
-          subtle: "#ffe4e6",
-          darkSubtle: "#4c0519",
+        obsidian: {
+          950: "#06090f",
+          900: "#090d16",
+          850: "#0d131f",
+          800: "#121927",
+          700: "#1b2438",
+          600: "#27344f",
         },
       },
       fontFamily: {
-        display: ["Rokkitt", "serif"],
-        serif: ["Literata", "serif"],
         sans: ["'Plus Jakarta Sans'", "system-ui", "-apple-system", "sans-serif"],
+        mono: ["'JetBrains Mono'", "monospace"],
+        display: ["'Plus Jakarta Sans'", "sans-serif"],
       },
     },
   },
   plugins: [],
 };
-
