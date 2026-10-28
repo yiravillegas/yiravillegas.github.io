@@ -126,14 +126,7 @@ export default function Home() {
                 <Mail className="h-4 w-4" />
                 Email
               </a>
-              <a
-                href="/resume.pdf"
-                download="Yira_Villegas_Resume.pdf"
-                className="inline-flex items-center gap-1.5 px-3 py-2.5 rounded-xl bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-200 hover:text-rose-600 dark:hover:text-rose-400 text-sm font-semibold transition-colors"
-                title="Download Resume PDF"
-              >
-                <FileText className="h-4 w-4" />
-              </a>
+
               <button
                 onClick={toggleTheme}
                 aria-label="Toggle Theme"

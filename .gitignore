@@ -4,3 +4,8 @@ out
 .taste-skill
 *.log
 .DS_Store
+*.pdf
+.env*
+.env.local
+.agents
+skills-lock.json
